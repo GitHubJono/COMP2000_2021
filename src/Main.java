@@ -1,6 +1,8 @@
+//import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.Graphics;
 import javax.swing.JFrame;
+//import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 class Main extends JFrame {
@@ -10,7 +12,7 @@ class Main extends JFrame {
         Stage stage;
 
         public App() {
-            setPreferredSize(new Dimension(720, 720));
+            setPreferredSize(new Dimension(1000, 720));
             stage = new Stage();
         }
 
@@ -18,7 +20,6 @@ class Main extends JFrame {
         public void paint(Graphics g) {
             stage.paint(g, getMousePosition());
         }
-
     }
 
     public static void main(String[] args) throws Exception {
